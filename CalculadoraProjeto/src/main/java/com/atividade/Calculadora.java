@@ -1,23 +1,23 @@
-package com.exemplo;
+package com.atividade;
 
 public class Calculadora {
 
-    // Soma dois números (podem ser positivos ou negativos)
+    // Soma [negativos e positivos]
     public double somar(double a, double b) {
         return a + b;
     }
 
-    // Subtrai b de a
+    // Subtrai
     public double subtrair(double a, double b) {
         return a - b;
     }
 
-    // Multiplica dois números
+    // Multiplica
     public double multiplicar(double a, double b) {
         return a * b;
     }
 
-    // Divide a por b, lança ArithmeticException se b for zero
+    // Divide a por b, lança ArithmeticException caso o b for zero
     public double dividir(double a, double b) {
         if (b == 0) {
             throw new ArithmeticException("Divisão por zero não é permitida.");

@@ -1,6 +1,9 @@
-package com.exemplo;
+package com.atividade;
 
 import org.junit.jupiter.api.Test;
+
+import com.atividade.Calculadora;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculadoraTest {
@@ -12,7 +15,7 @@ public class CalculadoraTest {
         assertEquals(5, calc.somar(2, 3));
         assertEquals(-1, calc.somar(2, -3));
         assertEquals(-5, calc.somar(-2, -3));
-        assertEquals(0, calc.somar(0, 0)); // teste adicional
+        assertEquals(0, calc.somar(0, 0)); // teste adicional para validar os resultados
     }
 
     @Test
@@ -20,7 +23,7 @@ public class CalculadoraTest {
         assertEquals(-1, calc.subtrair(2, 3));
         assertEquals(5, calc.subtrair(2, -3));
         assertEquals(1, calc.subtrair(-2, -3));
-        assertEquals(0, calc.subtrair(0, 0)); // teste adicional
+        assertEquals(0, calc.subtrair(0, 0)); // teste adicional para validar os resultados
     }
 
     @Test
@@ -28,7 +31,7 @@ public class CalculadoraTest {
         assertEquals(6, calc.multiplicar(2, 3));
         assertEquals(-6, calc.multiplicar(2, -3));
         assertEquals(6, calc.multiplicar(-2, -3));
-        assertEquals(0, calc.multiplicar(0, 3)); // teste adicional
+        assertEquals(0, calc.multiplicar(0, 3)); // teste adicional para validar os resultados
     }
 
     @Test
@@ -36,7 +39,7 @@ public class CalculadoraTest {
         assertEquals(2, calc.dividir(6, 3));
         assertEquals(-2, calc.dividir(6, -3));
         assertEquals(2, calc.dividir(-6, -3));
-        assertEquals(0, calc.dividir(0, 3)); // teste adicional
+        assertEquals(0, calc.dividir(0, 3)); // teste adicional para validar os resultados
     }
 
     @Test
